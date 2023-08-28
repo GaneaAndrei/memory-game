@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="singleplayer.css">
+</head>
+<body>
+  
+  <div class="snowflakes" aria-hidden="true">
+
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+  </div>
+
+  <div class="buttons">
+   
+    <!-- <button class="reset" id="reset" onclick="resetGame()">Reset</button> -->
+    <div class="stats">
+      <h1 class="matchess" id="matches">Matches:0</h1>
+      <h1 class="moves" id="miscari">Moves:0</h1>
+      
+    </div>
+    </div>
+    <h1 class="winner" id="win">Felicitari!Ai castigat!</h1>
+    <section id="game1" class="memory-game">
+
+        <div class="memory-card" data-christmas="wreath">
+           <img class="front-face" src="./img/wreath.png" alt="Wreath">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="wreath">
+           <img class="front-face" src="./img/wreath.png" alt="Wreath">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="bauble">
+           <img class="front-face" src="img/bauble.png" alt="Bauble">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="bauble">
+           <img class="front-face" src="img/bauble.png" alt="Bauble">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="reindeer">
+           <img class="front-face" src="img/reindeer.png" alt="Reindeer">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="reindeer">
+           <img class="front-face" src="img/reindeer.png" alt="Reindeer">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="fireplace">
+           <img class="front-face" src="img/fireplace.png" alt="Fireplace">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="fireplace">
+           <img class="front-face" src="img/fireplace.png" alt="Fireplace">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="santa-claus">
+           <img class="front-face" src="img/santa-claus.png" alt="Santa">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="santa-claus">
+           <img class="front-face" src="img/santa-claus.png" alt="Santa">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="presents">
+           <img class="front-face" src="img/presents.png" alt="Presents">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+       
+        <div class="memory-card" data-christmas="presents">
+           <img class="front-face" src="img/presents.png" alt="Presents">
+           <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+         </div>
+         
+       </section>
+       <div class="container" id="container">
+       <div class="buton-reset">
+       <button class="reset" id="reset" onclick="resetGame()">Reset</button>
+       <button onclick="menu()" class="main-menu" id="menu">Main menu</button>
+      </div>
+    </div>
+       <section id="game2" class="memory-game2">
+      
+
+        <div class="memory-card" data-christmas="wreath">
+          <img class="front-face" src="./img/wreath.png" alt="Wreath">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="wreath">
+          <img class="front-face" src="./img/wreath.png" alt="Wreath">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="bauble">
+          <img class="front-face" src="img/bauble.png" alt="Bauble">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="bauble">
+          <img class="front-face" src="img/bauble.png" alt="Bauble">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="reindeer">
+          <img class="front-face" src="img/reindeer.png" alt="Reindeer">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="reindeer">
+          <img class="front-face" src="img/reindeer.png" alt="Reindeer">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="fireplace">
+          <img class="front-face" src="img/fireplace.png" alt="Fireplace">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="fireplace">
+          <img class="front-face" src="img/fireplace.png" alt="Fireplace">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="santa-claus">
+          <img class="front-face" src="img/santa-claus.png" alt="Santa">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="santa-claus">
+          <img class="front-face" src="img/santa-claus.png" alt="Santa">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="presents">
+          <img class="front-face" src="img/presents.png" alt="Presents">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+      
+       <div class="memory-card" data-christmas="presents">
+          <img class="front-face" src="img/presents.png" alt="Presents">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+         
+         <div class="memory-card" data-christmas="christmas-decorations">
+          <img class="front-face" src="img/christmas-decorations.png" alt="Decorations">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-christmas="christmas-decorations">
+          <img class="front-face" src="img/christmas-decorations.png" alt="Decorations">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-christmas="christmas-lights">
+          <img class="front-face" src="img/christmas-lights.png" alt="Lights">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+        <div class="memory-card"  data-christmas="christmas-lights">
+          <img class="front-face" src="img/christmas-lights.png" alt="Lights">
+          <img class="back-face" src="img/back-face.svg" alt="Memory Card">
+        </div>
+        
+       </section>
+       <div class="container2" id="container2">
+        <div class="buton-reset">
+        <button class="reset" id="reset" onclick="resetGame()">Reset</button>
+        <button onclick="menu()"  class="main-menu" id="menu">Main menu</button>
+       </div>
+     </div>
+       <div id="optionsDlg" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <h3>Alege dimensiunea tabelei de joc:</h3>
+            <button onclick="soundPlay();" id="start" class="button">3x4</button>
+            <button onclick="soundPlay();" id="start2" class="button2">4x4</button>
+        </div>
+      </div>
+      <audio class="audio">
+        <source src="jingle.mp3">
+        </audio>
+</body>
+<script src="singleplayer.js"></script>
+</html>
